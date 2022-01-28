@@ -9,8 +9,8 @@ set(wxBUILD_SHARED OFF)
 set(wxBUILD_COMPATIBILITY "3.1")
 add_subdirectory(external/wxWidgets)
 
-add_executable(zaggin
+add_executable(hello-wxWidgets
     main.cpp
 )
-target_include_directories(zaggin PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/external/wxWidgets/include")
-target_link_libraries(zaggin wx::net wx::core wx::base)
+target_include_directories(hello-wxWidgets PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/external/wxWidgets/include")
+target_link_libraries(hello-wxWidgets wx::net wx::core wx::base)
